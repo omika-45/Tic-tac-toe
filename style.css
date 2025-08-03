@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-  color: whitesmoke;
+  color: #ffffff;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
@@ -23,16 +23,17 @@ h1 {
   margin-bottom: 50px;
 }
 #gameboard {
-  height: 500px;
-  width: 500px;
+  height: 550px;
+  width: 550px;
+  padding: 20px;
   border-radius: 15px;
   display: grid;
   place-items: center;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
 .box {
-  height: 100px;
-  width: 100px;
+  height: 170px;
+  width: 170px;
   color: black;
   font-size: 3rem;
   display: flex;
@@ -115,11 +116,11 @@ h1 {
   #gameboard {
     height: 300px;
     width: 300px;
-    padding: 20px;
+    padding: 5px;
   }
   .box {
-    height: 60px;
-    width: 60px;
+    height: 100px;
+    width: 100px;
     font-size: 2rem;
   }
   #resetbutton {
