@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  color: whitesmoke;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+#gameboard {
+  height: 500px;
+  width: 500px;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+.box {
+  height: 100px;
+  width: 100px;
+  color: black;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+}
+#space{
+  margin-top: 30px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.bottom{
+  border-bottom: 6px solid black;
+}
+.right{
+  border-right: 6px solid black;
+}
+.left{
+  border-left: 6px solid black;
+}
+.top{
+  border-top: 6px solid black;
+  border-radius: 10px solid #333;
+}
+
+.bottom, .top, .left, .right {
+  border-color: #ffffff; 
+  border-width: 4px;
+  
+}
+
+#resetbutton {
+  margin-top: 25px;
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid indianred;
+  padding: 15px 25px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Media Quaries - Responsive Design */
+
+@media (max-width: 600px) {
+  body{
+    padding: 20px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  #gameboard {
+    height: 380px;
+    width: 380px;
+    padding: 10px;
+  }
+  .box {
+    height: 120px;
+    width: 120px;
+    font-size: 2.5rem;
+  }
+  #resetbutton {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  #gameboard {
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+  }
+  .box {
+    height: 60px;
+    width: 60px;
+    font-size: 2rem;
+  }
+  #resetbutton {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
